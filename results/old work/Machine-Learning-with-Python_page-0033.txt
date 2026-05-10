@@ -1,0 +1,49 @@
+1.19 Multiplying Matrices
+
+Problem
+
+You want to multiply two matrices.
+
+Solution
+Use NumPy’s dot:
+
+# Load library
+import numpy as np
+
+# Create matrix
+matrix_a = np.array([[1, 1]
+
+(1, 21)
+
+# Create matrix
+matrix_b = np.array([[1, 3],
+(1, 2]])
+
+# Multiply two matrices
+np.dot(matrix_a, matrix_b)
+
+array(({[2, 5],
+(3, 7]])
+
+Discussion
+Alternatively, in Python 3.5+ we can use the @ operator:
+
+#4 Multiply two matrices
+matrix_a @ matrix_b
+
+array(({[2, 5],
+(3, 7]])
+
+If we want to do element-wise multiplication, we can use the * operator:
+
+#4 Multiply two matrices element-wise
+matrix_a * matrix_b
+
+array(({[1, 3],
+[1, 4]])
+
+See Also
+
+« Array vs. Matrix Operations, MathWorks
+
+18 | Chapter 1: Vectors, Matrices, and Arrays

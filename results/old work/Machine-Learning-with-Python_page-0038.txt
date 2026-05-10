@@ -1,0 +1,34 @@
+CHAPTER 2
+Loading Data
+
+2.0 Introduction
+
+The first step in any machine learning endeavor is to get the raw data into our system.
+The raw data might be a logfile, dataset file, or database. Furthermore, often we will
+want to retrieve data from multiple sources. The recipes in this chapter look at meth-
+ods of loading data from a variety of sources, including CSV files and SQL databases.
+We also cover methods of generating simulated data with desirable properties for
+experimentation. Finally, while there are many ways to load data in the Python eco-
+system, we will focus on using the pandas library’s extensive set of methods for load-
+ing external data, and using scikit-learn—an open source machine learning library in
+Python—for generating simulated data.
+
+2.1 Loading a Sample Dataset
+
+Problem
+
+You want to load a preexisting sample dataset.
+
+Solution
+scikit-learn comes with a number of popular datasets for you to use:
+
+# Load scikit-learn's datasets
+from sklearn import datasets
+
+# Load digits dataset
+digits = datasets.load_ digits()
+
+# Create features matrix
+features = digits.data
+
+23

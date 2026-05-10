@@ -1,0 +1,46 @@
+1.20 Inverting a Matrix
+
+Problem
+
+You want to calculate the inverse of a square matrix.
+
+Solution
+Use Num Py’s linear algebra inv method:
+
+# Load library
+import numpy as np
+
+# Create matrix
+matrix = np.array([[1, 4],
+(2, 5]])
+
+# Calculate inverse of matrix
+np. Linalg.inv(matrix)
+
+array([[-1.66666667, 1.33333333],
+[ 0.66666667, -0.33333333]])
+
+Discussion
+
+The inverse of a square matrix, A, is a second matrix A ', such that:
+
+AA! =I
+
+where I is the identity matrix. In NumPy we can use linalg.inv to calculate A ' if it
+exists. To see this in action, we can multiply a matrix by its inverse and the result is
+
+the identity matrix:
+
+#4 Multiply matrix and its inverse
+matrix @ np.Llinalg.inv(matrix)
+
+array({[ 1., 90.],
+[ 6., 1.]))
+
+See Also
+
+e Inverse of a Matrix
+
+1.20 Inverting a Matrix
+
+19

@@ -1,0 +1,5 @@
+always produce the same output. We will use seeds throughout this book so that the
+code you see in the book and the code you run on your computer produces the same
+results.
+
+1.21 Generating Random Values | 21
