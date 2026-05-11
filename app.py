@@ -12,12 +12,12 @@ from src.text_post_processing import fix_bullets
 # ===============================
 st.set_page_config(
     page_title="Smart OCR Engine",
-    page_icon="📄",
+    page_icon="",
     layout="wide"
 )
 
-st.title("📄 Smart OCR Engine")
-st.caption("Upload an image and extract clean, structured text using AI preprocessing pipeline")
+st.title("Smart OCR Engine")
+st.caption("Extract high-quality text from images using advanced OCR and preprocessing techniques.")
 
 # ===============================
 # UPLOAD SECTION
@@ -42,13 +42,13 @@ if uploaded_file is not None:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("🖼 Original Image")
+        st.subheader("Original Image")
         st.image(image, use_column_width=True)
 
     # ===============================
     # PROCESSING INDICATOR
     # ===============================
-    with st.spinner("🧠 Extracting text... please wait"):
+    with st.spinner("Extracting text... please wait"):
         text1 = extract_text(img_bgr)
         processed = full_pipeline(img_bgr)
         text2 = extract_text(processed)
@@ -60,7 +60,7 @@ if uploaded_file is not None:
     final_text = fix_bullets(final_text)
 
     with col2:
-        st.subheader("📑 Extracted Text")
+        st.subheader("Extracted Text")
 
         if final_text.strip():
             st.success("Text extracted successfully")
